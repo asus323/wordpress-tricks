@@ -1,1 +1,1 @@
-<?php $content = get_the_excerpt(); echo esc_html(substr($content,0,310)).'...'; ?>
+<?php echo wp_trim_words( get_the_excerpt(), 65 ); ?>
